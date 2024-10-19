@@ -11,6 +11,7 @@
       position: relative;
 
 }
+
 .image {
       object-fit: cover;
 }
@@ -22,7 +23,7 @@
       gap: 30px;
 }
 
-.date{
+.date {
       color: gray;
 }
 
@@ -43,5 +44,8 @@
       padding: 2px 0px;
 }
 
-
-
+@media screen and (max-width: 1280) {
+      .imageContainer {
+            display: none;
+      }
+}

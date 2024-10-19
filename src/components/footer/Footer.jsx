@@ -10,9 +10,9 @@ const Footer = () => {
           <Image src='/logo.png' alt='logo' width={50} height={50} />
           <h1 className={styles.logoText} >GIS blog</h1>
         </div>
-        <p className={styles.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Iusto, quod recusandae? Dolorum, incidunt eos perferendis, 
-          ipsa itaque possimus totam similique in doloribus, natus officia 
+        <p className={styles.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Iusto, quod recusandae? Dolorum, incidunt eos perferendis,
+          ipsa itaque possimus totam similique in doloribus, natus officia
           vel et velit exercitationem ex eaque?
         </p>
         <div className={styles.icons}>
