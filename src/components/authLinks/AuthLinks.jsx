@@ -8,13 +8,13 @@ const AuthLinks = () => {
 
   const [open, setOpen] = useState(false);
   const status = "authenticated";
-   return (
+  return (
     <>
-      {status === "authenticated" ? (
+      {status === "notauthenticated" ? (
         <Link href="/login" className={styles.link}>Login</Link>
       ) : (
         <>
-          <Link href="/write"  className={styles.link}>Write</Link>
+          <Link href="/write" className={styles.link}>Write</Link>
           <span className={styles.links}>Logout</span>
         </>
       )}
@@ -28,14 +28,14 @@ const AuthLinks = () => {
         <Link href='/'>About</Link>
         <Link href='/'>ontact</Link>
         {status === "authenticated" ? (
-        <Link href="/login">Login</Link>
-      ) : (
-        <>
-          <Link href="/write">Write</Link>
-          <span className={styles.links}>Logout</span>
-        </>
-      )}
-        </div>)}
+          <Link href="/login">Login</Link>
+        ) : (
+          <>
+            <Link href="/write">Write</Link>
+            <span className={styles.links}>Logout</span>
+          </>
+        )}
+      </div>)}
     </>
   )
 }
